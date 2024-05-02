@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  --line-color: #797a7a;
+}
+.borderBlack {
+  @apply border border-black/10;
+}

@@ -22,40 +22,7 @@ const nextConfig = {
   experimental: {
     appDir: true, // Active la nouvelle structure `app` (si vous utilisez Next.js 13+)
   },
-
-  // Redirections ou rewrites (optionnel)
-  async rewrites() {
-    return [
-      // Exemple : rediriger une route spécifique vers une autre URL
-      // {
-      //   source: '/old-route',
-      //   destination: '/new-route',
-      // },
-    ];
-  },
-
-  // Headers personnalisés (optionnel)
-  async headers() {
-    return [
-      {
-        source: '/(.*)', // Applique à toutes les routes
-        headers: [
-          {
-            key: 'X-Content-Type-Options',
-            value: 'nosniff',
-          },
-          {
-            key: 'X-Frame-Options',
-            value: 'DENY',
-          },
-          {
-            key: 'X-XSS-Protection',
-            value: '1; mode=block',
-          },
-        ],
-      },
-    ];
-  },
 };
 
+// Exportez la configuration comme un module ES
 export default nextConfig;

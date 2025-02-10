@@ -7,10 +7,7 @@ const nextConfig = {
         hostname: 'media.licdn.com'
       }
     ]
-  },
-  experimental: {
-    serverActions: true
   }
-}
+};
 
-export default nextConfig
+export default nextConfig;

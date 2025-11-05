@@ -1,7 +1,9 @@
 import { color } from "framer-motion";
+import { title } from "process";
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
+import { GiRadioTower } from "react-icons/gi";
 import { LuGraduationCap } from "react-icons/lu";
 
 export const links = [
@@ -46,14 +48,24 @@ export const experiencesData = [
   },
   {
     title: "Technicien bureau d'études",
-    location: "Velizy, TX",
+    location: "Velizy, Ile de France",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "I worked in an engineering design office focused on electromagnetics, and I managed the company’s website development in PHP.",
     icon: React.createElement(FaReact),
     date: "2023 - present",
     color: "primary",
     position: "left",
   },
+  {
+    title: "Expert Wifi et développeur web",
+    location: "Vitry-sur-Seine, Ile de France",
+    description:
+    "I am currently working as a Wifi Expert and i also build web applications using the latest technologies.",
+    icon: React.createElement(GiRadioTower),
+    date: "2025 - present",
+    color: "warning",
+    position: "right",
+  }
 ] as const;
 
 

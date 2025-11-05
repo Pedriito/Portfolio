@@ -83,9 +83,9 @@ export default function Intro () {
 
         />
         avec une expérience de
-        <span className='font-bold'> 3 ans </span> dans le développement web.
-        Spécialement avec
-        <span className='underline'> React JS</span>. Je vis en région
+        <span className='font-bold'> 5 ans </span> dans le développement web.
+        Spécialement avec {' '}
+        <span className='underline'>React JS</span>. Je vis en région
         Parisienne 🇫🇷
       </motion.h1>
 

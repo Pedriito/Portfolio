@@ -9,8 +9,7 @@ function ContactForm() {
     }
     return (
         <form onSubmit={handleSubmit}
-        action={process.env.NEXT_PUBLIC_FORMSPREE_URL}
-        method='POST'
+        className="flex flex-col"
         >
             <input
                 id="email"
@@ -18,6 +17,7 @@ function ContactForm() {
                 name="email"
                 placeholder='Votre email'
                 className="w-full p-2 border border-gray-300 rounded-full"
+                required
             />
             <ValidationError
                 prefix="Email"
@@ -30,6 +30,7 @@ function ContactForm() {
                 rows={6}
                 placeholder='Dites moi ce que je peux faire pour vous et je me ferai un plaisir de vous aider'
                 className="w-full p-2 border border-gray-300 rounded-xl mb-2 mt-2"
+                required
             />
             <ValidationError
                 prefix="Message"

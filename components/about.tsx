@@ -11,7 +11,7 @@ export default function About () {
       className=' max-w-[45rem] text-center leading-8 sm:mb- scroll-mt-28 mt-28 bg-opacity-40'
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ delay: 0.175 }}
+      transition={{ delay: 0.2, duration: 0.6, ease: 'easeOut' }}
       id='about'
     >
       <SectionHeading>À propos de moi</SectionHeading>
